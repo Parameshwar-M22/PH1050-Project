@@ -1,6 +1,8 @@
 import pandas as pd
 import numpy as np
 from scipy import stats
+import matplotlib.pyplot as plt
+
 df = pd.read_csv("ElementData.csv")
 noble = df[df['Symbol'].isin(["He", "Ne", "Ar", "Kr", "Xe"])]
 noble=noble.set_index('Symbol')
@@ -37,4 +39,4 @@ plt.legend()
 plt.tight_layout()
 plt.savefig("noble_gas_ratio.png", dpi=200)
 print("95% CI for mean:", ci) 
- print("Prediction interval from Ar, Kr, Xe:", pi)
+print("Prediction interval from Ar, Kr, Xe:", pi)
