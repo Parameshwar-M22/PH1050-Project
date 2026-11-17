@@ -42,13 +42,14 @@ r = 1.5
 
 x = np.arange(7, 15, 1)
 y = np.zeros(8)
-t = 1/2**x
 
 for i in range(8):
     y[i] = abs(analytic_force(r) - numerical_force(r, h=1/2**(x[i])))
 
 plt.title("Error vs. Input 'h' (log-log)")
-plt.plot(np.log(t), np.log(y), "-o")
-plt.xlabel("Order of 2")
+plt.plot(-x*np.log(2), np.log(y), "-o", label='Error')
+plt.plot(-x*np.log(2), -2*x*np.log(2), label="y=2x")
+plt.xlabel("Order of h")
 plt.ylabel("Order of error")
+plt.legend()
 plt.show()
