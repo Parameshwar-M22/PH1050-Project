@@ -58,14 +58,3 @@ Files: `clean_elelments.py`, `part2_stats.py`, `ElementData.csv`
 - Experimented with KNN variations: the $k = 1$ to $20$ sweeps for cross-validation and extrapolation and their plots.
 - Scikit-learn extrapolation (`Scikit_learn_based/Extrapolation/`): training on periods 1 to 4 and testing on periods 5 to 6.
 
-## Shared work
-
-| Task | Who |
-|---|---|
-| Written report | `[confirm who]` |
-| Repository README | `[confirm who]` |
-| 12-minute talk | whole group, each member presents their own part |
-
----
-
-*The split within Parts 1 and 2 is a proposed even division of that part's work. Adjust the bullets to match what each person actually did before submitting.*
